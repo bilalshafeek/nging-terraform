@@ -1,10 +1,10 @@
 provider "aws" {
-  region = "us-east-1"  # Change to your preferred region
+  region = "us-east-1"  #  preferred region
 }
 
 resource "aws_instance" "nginx_server" {
-  ami           = "ami-0c02fb55956c7d316"  # Amazon Linux 2 AMI (for us-east-1)
-  instance_type = "t2.micro"
+  ami           = "ami-08a6efd148b1f7504"  # Amazon Linux 2 AMI (for us-east-1)
+  instance_type = "t3.micro"
 
   user_data = <<-EOF
               #!/bin/bash
